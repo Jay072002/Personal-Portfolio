@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Download, Github, Linkedin, Mail } from "lucide-react";
-import jayProfile from "@/assets/jay-profile.jpg";
+import jayProfile from "@/assets/Jay-profile.jpg";
 
 export function HeroSection() {
   const scrollToSection = (href: string) => {
