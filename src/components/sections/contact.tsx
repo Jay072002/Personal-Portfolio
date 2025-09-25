@@ -68,15 +68,15 @@ export function ContactSection() {
     // Send email via EmailJS
     try {
       await emailjs.send(
-        "service_8o7nlo1",        // replace with your EmailJS service ID
-        "template_2reggux",       // replace with your EmailJS template ID
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,        // replace with your EmailJS service ID
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,       // replace with your EmailJS template ID
         {
           from_name: formData.name,
           from_email: formData.email,
           subject: formData.subject,
           message: formData.message,
         },
-        "bwYRHmTlhMXVHL6OW"         // replace with your EmailJS public key
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,         // replace with your EmailJS public key
       );
 
       toast({
