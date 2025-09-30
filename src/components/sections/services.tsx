@@ -166,7 +166,7 @@ export function ServicesSection() {
                   className="border-primary text-primary hover:bg-primary hover:text-primary-foreground"
                   onClick={() =>
                     window.location.href =
-                      "mailto:jaypanchal@example.com?subject=Portfolio Inquiry - Request to Schedule a Call&body=Hello Jay,%0D%0A%0D%0AI visited your portfolio website and would like to schedule a call with you.%0D%0A%0D%0APlease find my details below:%0D%0A- Name: [Your Name]%0D%0A- Company/Organization: [Your Company]%0D%0A- Preferred Date/Time: [Your Availability]%0D%0A- Purpose of Call: [Brief about the discussion]%0D%0A%0D%0ALooking forward to your confirmation.%0D%0A%0D%0ABest Regards,%0D%0A[Your Name]"
+                      "mailto:jay.panchal0704@gmail.com?subject=Portfolio Inquiry - Request to Schedule a Call&body=Hello Jay,%0D%0A%0D%0AI visited your portfolio website and would like to schedule a call with you.%0D%0A%0D%0APlease find my details below:%0D%0A- Name: [Your Name]%0D%0A- Company/Organization: [Your Company]%0D%0A- Preferred Date/Time: [Your Availability]%0D%0A- Purpose of Call: [Brief about the discussion]%0D%0A%0D%0ALooking forward to your confirmation.%0D%0A%0D%0ABest Regards,%0D%0A[Your Name]"
                   }
                 >
                   Schedule a Call
