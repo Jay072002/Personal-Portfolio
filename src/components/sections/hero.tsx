@@ -163,7 +163,7 @@ export function HeroSection() {
               <div className="absolute -bottom-4 -left-4 bg-card border border-card-border px-4 py-2 rounded-xl">
                 <p className="text-sm font-medium">3+ Years Experience</p>
                 <p className="text-xs text-foreground-muted">
-                  Backend Development
+                  Full Stack Development
                 </p>
               </div>
             </div>

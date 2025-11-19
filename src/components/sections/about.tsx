@@ -6,7 +6,7 @@ const workExperience = [
     title: "Node.js Developer",
     company: "Fancall Pvt Ltd",
     period: "May 2024 – Jun 2025",
-    type: "Backend Focused",
+    type: "Full Stack Focus",
     description: "Leading backend development for scalable communication platforms, implementing real-time features and optimizing system performance.",
     icon: Briefcase,
   },
@@ -38,7 +38,7 @@ export function AboutSection() {
             About Me
           </h2>
           <p className="text-xl text-foreground-muted max-w-3xl mx-auto">
-            Passionate backend engineer with a drive for continuous learning and knowledge sharing
+            Passionate Full stack engineer with a drive for continuous learning and knowledge sharing
           </p>
         </div>
 

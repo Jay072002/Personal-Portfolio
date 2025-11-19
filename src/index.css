@@ -4,71 +4,71 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Professional Portfolio Design System for Jay Panchal */
+/* Professional Light Theme Portfolio Design System */
 
 @layer base {
   :root {
-    /* Dark theme - Primary palette */
-    --background: 240 10% 3.9%;
-    --background-secondary: 240 8% 6%;
-    --background-card: 240 9% 8%;
-    --foreground: 0 0% 98%;
-    --foreground-muted: 240 5% 64.9%;
+    /* Light Theme - Primary palette */
+    --background: 0 0% 100%;               /* Pure White */
+    --background-secondary: 0 0% 98%;      /* Soft Neutral White */
+    --background-card: 0 0% 97%;           /* Light Grey Card */
+    --foreground: 220 15% 15%;             /* Dark Charcoal */
+    --foreground-muted: 220 10% 45%;       /* Medium Grey Text */
 
-    /* Electric blue accent system */
-    --electric-blue: 200 100% 50%;
-    --electric-blue-light: 200 100% 60%;
-    --electric-blue-dark: 200 100% 40%;
-    --electric-blue-glow: 200 100% 50%;
+    /* Electric blue accent */
+    --electric-blue: 217 90% 50%;          /* Modern Corporate Blue */
+    --electric-blue-light: 217 90% 60%;
+    --electric-blue-dark: 217 90% 40%;
+    --electric-blue-glow: 217 90% 55%;
 
     /* Teal secondary accent */
-    --teal: 180 100% 50%;
-    --teal-light: 180 100% 60%;
-    --teal-dark: 180 100% 40%;
+    --teal: 180 72% 40%;
+    --teal-light: 180 72% 50%;
+    --teal-dark: 180 72% 32%;
 
-    /* Orange warning/highlight */
-    --orange: 25 95% 53%;
-    --orange-light: 25 95% 63%;
-    --orange-dark: 25 95% 43%;
+    /* Orange highlight (subtle, elegant) */
+    --orange: 28 90% 55%;
+    --orange-light: 28 90% 65%;
+    --orange-dark: 28 90% 45%;
 
     /* Semantic tokens */
-    --primary: 200 100% 50%;
-    --primary-foreground: 240 10% 3.9%;
-    --primary-glow: 200 100% 50%;
+    --primary: 217 90% 50%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 217 90% 60%;
 
-    --secondary: 240 9% 15%;
-    --secondary-foreground: 0 0% 98%;
+    --secondary: 0 0% 94%;
+    --secondary-foreground: 220 15% 15%;
 
-    --accent: 180 100% 50%;
-    --accent-foreground: 240 10% 3.9%;
+    --accent: 180 72% 40%;
+    --accent-foreground: 0 0% 100%;
 
-    --card: 240 9% 8%;
-    --card-foreground: 0 0% 98%;
-    --card-border: 240 8% 15%;
+    --card: 0 0% 100%;
+    --card-foreground: 220 15% 15%;
+    --card-border: 0 0% 90%;
 
-    --muted: 240 9% 15%;
-    --muted-foreground: 240 5% 64.9%;
+    --muted: 0 0% 92%;
+    --muted-foreground: 220 10% 45%;
 
-    --border: 240 8% 15%;
-    --input: 240 9% 15%;
-    --ring: 200 100% 50%;
+    --border: 0 0% 85%;
+    --input: 0 0% 96%;
+    --ring: 217 90% 50%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 0 0% 98%;
+    --destructive: 0 80% 55%;
+    --destructive-foreground: 0 0% 100%;
 
-    /* Gradients */
+    /* Gradients - simplified for light mode */
     --gradient-primary: linear-gradient(135deg, hsl(var(--electric-blue)), hsl(var(--teal)));
-    --gradient-hero: linear-gradient(135deg, hsl(var(--background)) 0%, hsl(var(--background-secondary)) 100%);
-    --gradient-card: linear-gradient(145deg, hsl(var(--card)) 0%, hsl(var(--background-secondary)) 100%);
+    --gradient-hero: linear-gradient(135deg, #ffffff 0%, #f5f7fa 100%);
+    --gradient-card: linear-gradient(145deg, #ffffff 0%, #f3f3f3 100%);
     --gradient-text: linear-gradient(135deg, hsl(var(--electric-blue)), hsl(var(--teal)));
 
-    /* Shadows and glows */
-    --shadow-glow: 0 0 50px hsl(var(--electric-blue-glow) / 0.3);
-    --shadow-card: 0 8px 32px hsl(240 10% 3.9% / 0.4);
-    --shadow-button: 0 4px 16px hsl(var(--primary) / 0.3);
+    /* Shadows and glows for light UI */
+    --shadow-glow: 0 0 35px hsl(var(--electric-blue-glow) / 0.25);
+    --shadow-card: 0 4px 16px rgba(0,0,0,0.06);
+    --shadow-button: 0 4px 12px hsl(var(--primary) / 0.25);
 
-    /* Animations */
-    --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    /* Smooth animations */
+    --transition-smooth: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
     --transition-fast: all 0.2s ease-out;
 
     --radius: 0.75rem;
@@ -120,11 +120,11 @@
     mask-composite: exclude;
   }
 
-  /* Animated background dots */
+  /* Subtle background dots (professional toned-down) */
   .bg-dots {
-    background-image: radial-gradient(circle, hsl(var(--electric-blue) / 0.1) 1px, transparent 1px);
+    background-image: radial-gradient(circle, hsl(var(--electric-blue) / 0.08) 1px, transparent 1px);
     background-size: 30px 30px;
-    animation: float 20s ease-in-out infinite;
+    animation: float 22s ease-in-out infinite;
   }
 
   /* Hover animations */
@@ -161,53 +161,9 @@
 }
 
 @layer utilities {
-  /* Animation keyframes */
   @keyframes float {
-    0%, 100% { transform: translateY(0px) rotate(0deg); }
-    33% { transform: translateY(-10px) rotate(1deg); }
-    66% { transform: translateY(-5px) rotate(-1deg); }
-  }
-
-  @keyframes fadeInUp {
-    from {
-      opacity: 0;
-      transform: translateY(30px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-
-  @keyframes slideInLeft {
-    from {
-      opacity: 0;
-      transform: translateX(-50px);
-    }
-    to {
-      opacity: 1;
-      transform: translateX(0);
-    }
-  }
-
-  @keyframes slideInRight {
-    from {
-      opacity: 0;
-      transform: translateX(50px);
-    }
-    to {
-      opacity: 1;
-      transform: translateX(0);
-    }
-  }
-
-  @keyframes pulse-glow {
-    0%, 100% {
-      box-shadow: 0 0 20px hsl(var(--electric-blue) / 0.4);
-    }
-    50% {
-      box-shadow: 0 0 40px hsl(var(--electric-blue) / 0.6);
-    }
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-6px); }
   }
 
   .animate-fadeInUp {
@@ -224,15 +180,5 @@
 
   .animate-pulse-glow {
     animation: pulse-glow 2s ease-in-out infinite;
-  }
-}
-
-@layer base {
-  * {
-    @apply border-border;
-  }
-
-  body {
-    @apply bg-background text-foreground;
   }
 }

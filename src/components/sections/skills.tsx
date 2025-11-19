@@ -20,6 +20,7 @@ const skillCategories = [
       { name: "React.js", level: 90 },
       { name: "Redux", level: 80 },
       { name: "HTML/CSS/SCSS", level: 75 },
+      { name: "NextJs", level: 70 },
       { name: "Responsive & Tailwind Design", level: 70 },
     ]
   },
