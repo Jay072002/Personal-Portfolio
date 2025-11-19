@@ -141,8 +141,8 @@ export function HeroSection() {
                       className="w-full bg-background/80 backdrop-blur-sm border border-card-border hover:bg-background/90"
                       onClick={() => {
                         const link = document.createElement("a");
-                        link.href = cvFile; // the imported PDF
-                        link.download = "Jay-Panchal-Resume.pdf"; // filename for download
+                        link.href = "/Jay Panchal Resume.pdf";
+                        link.download = "Jay Panchal Resume.pdf";
                         document.body.appendChild(link);
                         link.click();
                         document.body.removeChild(link);
